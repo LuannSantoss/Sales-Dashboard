@@ -5,7 +5,7 @@ import simplejson as json
 import requests
 import streamlit_lottie
 from streamlit_lottie import st_lottie
-import toml
+
 
 
 #https://www.webfx.com/tools/emoji-cheat-sheet/
@@ -14,8 +14,6 @@ st.set_page_config(page_title='Sales Dashboard',
                    layout='wide',
 )
 
-config = toml.load("config.toml")
-st.write(config)
 
 
 

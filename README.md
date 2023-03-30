@@ -14,3 +14,5 @@ The dashboard shows information such as daily sales trend, hourly sales trend, s
 
 
 `streamlit run sales_dashboard.py`
+
+The link for Streamlit Share aplication is: https://luansantos-salesdash.streamlit.app/

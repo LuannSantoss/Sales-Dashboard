@@ -1,6 +1,6 @@
 # Sales Dashboard
 
-This is a Streamlit application that shows sales insights from a supermarket sales dataset. The dataset used in this project can be found here and it is originally from Kaggle.
+This is a Streamlit application that shows sales insights from a supermarket sales dataset. The dataset used in this project can be found [here](https://github.com/LuannSantoss/Sales-Dashboard/blob/main/supermarkt_sales.xlsx) and it is originally from Kaggle.
 
 The dashboard shows information such as daily sales trend, hourly sales trend, sales by product line, and others.<p/>
 

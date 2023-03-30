@@ -3,6 +3,7 @@ import plotly.express as px
 import streamlit as st
 import simplejson as json
 import requests
+import io
 import streamlit_lottie
 from streamlit_lottie import st_lottie
 
@@ -19,7 +20,10 @@ st.set_page_config(page_title='Sales Dashboard',
 
 @st.cache_data
 def get_data_from_excel():
-    df = pd.read_excel('Sales-Dashboard/supermarkt_sales.xlsx', sheet_name='Sales')
+  
+    url = "https://github.com/LuannSantoss/Sales-Dashboard/raw/main/supermarkt_sales.xlsx"
+    content = requests.get(url).content
+    df = pd.read_excel(io.BytesIO(content), sheet_name='Sales')
 
     df = df.drop(df.index[:2])
     df = df.rename(columns=df.iloc[0]).drop(df.index[0])

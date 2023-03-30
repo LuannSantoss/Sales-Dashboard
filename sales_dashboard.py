@@ -71,7 +71,7 @@ df_selection = df.query(
 # ---- MAINPAGE ----
 st.title(":bar_chart: Sales Dashboard")
 
-st.write('For more projects, please check my repositori on GitHub on [here](https://github.com/LuannSantoss?tab=repositories)')
+st.write('For more projects, please check my repositories on GitHub [here](https://github.com/LuannSantoss?tab=repositories)')
 
 st_lottie(lottie_hello, key='hello!', width=250, height=250)
 

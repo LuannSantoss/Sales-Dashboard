@@ -150,16 +150,3 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-#--- THEME ---
-
-if 'theme' not in st.script_runner.RERUN_EXCEPTION_TEXT:
-    # Use dark mode
-    dark_theme = """
-    [theme]
-    primaryColor = "#1e8449"
-    backgroundColor = "#0d0d0d"
-    secondaryBackgroundColor = "#313335"
-    textColor = "#fff"
-    font = "sans serif"
-    """
-    st.write(dark_theme, file=open(os.path.join(os.getcwd(), "config.toml"), "w"))

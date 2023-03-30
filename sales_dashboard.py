@@ -3,7 +3,6 @@ import plotly.express as px
 import streamlit as st
 import simplejson as json
 import requests
-import io
 import streamlit_lottie
 from streamlit_lottie import st_lottie
 

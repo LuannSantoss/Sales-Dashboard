@@ -21,8 +21,9 @@ st.set_page_config(page_title='Sales Dashboard',
 @st.cache_data
 def get_data_from_excel():
   
+    url = 'https://raw.githubusercontent.com/LuannSantoss/Sales-Dashboard/main/supermarkt_sales.xlsx'
+    df = pd.read_excel(url, sheet_name='Sales')
 
-    df = pd.read_excel(io="supermarkt_sales.xlsx", sheet_name='Sales')
 
     df = df.drop(df.index[:2])
     df = df.rename(columns=df.iloc[0]).drop(df.index[0])
